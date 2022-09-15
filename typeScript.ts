@@ -54,9 +54,56 @@ let sing = ():void =>{
 }
 
 //never
-
 let error = ():never =>{
     throw Error('oooppssss')
 }
+
+//interface
+interface Army{
+    count: number,
+    type: string,
+    name:string
+}
+
+let fightArmy = (a: Army)=>{
+    console.log('!Fight');
+}
+
+
+//type assertions
+let p1 = {} as Army;
+console.log(p1.count);
+
+
+//fucntion
+
+let fightArmy2 = (a: Army): void =>{
+    console.log('!Fight');
+}
+
+let killOnePerson = (a: Army): number =>{
+    console.log('!Kill');
+    a.count--;
+    return a.count;
+}
+
+//Class
+class Animal {
+    speak:string = '----';
+
+    constructor(sound:string){
+        this.speak = sound;
+    }
+
+    greet() : string{
+        return `Hello ${this.speak}`;
+    }
+}
+
+let dog = new Animal('Bhaw Bhaw');
+
+console.log(dog.greet());
+
+
 
 export {};

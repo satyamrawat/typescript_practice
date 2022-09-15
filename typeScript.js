@@ -47,3 +47,31 @@ var sing = function () {
 var error = function () {
     throw Error('oooppssss');
 };
+var fightArmy = function (a) {
+    console.log('!Fight');
+};
+//type assertions
+var p1 = {};
+console.log(p1.count);
+//fucntion
+var fightArmy2 = function (a) {
+    console.log('!Fight');
+};
+var killOnePerson = function (a) {
+    console.log('!Kill');
+    a.count--;
+    return a.count;
+};
+//Class
+var Animal = /** @class */ (function () {
+    function Animal(sound) {
+        this.speak = '----';
+        this.speak = sound;
+    }
+    Animal.prototype.greet = function () {
+        return "Hello ".concat(this.speak);
+    };
+    return Animal;
+}());
+var dog = new Animal('Bhaw Bhaw');
+console.log(dog.greet());
