@@ -104,6 +104,12 @@ let dog = new Animal('Bhaw Bhaw');
 
 console.log(dog.greet());
 
+//Union
 
+let confuse : string | number = "hello";
+confuse = 5;
+
+
+// typescript is smart enough to know the datatypes
 
 export {};

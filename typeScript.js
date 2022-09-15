@@ -75,3 +75,6 @@ var Animal = /** @class */ (function () {
 }());
 var dog = new Animal('Bhaw Bhaw');
 console.log(dog.greet());
+//Union
+var confuse = "hello";
+confuse = 5;
