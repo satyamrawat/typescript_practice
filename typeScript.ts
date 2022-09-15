@@ -17,7 +17,7 @@ let qual: string[] = ['10','12', 'B.Tech'];
 // let qual: Array<string> = ['10','12', 'B.Tech'];
 
 for(let i: number =0; i<qual.length; i++){
-    console.log(`${i}. Qualification :- ${qual[i]}`);
+    console.log(`${i+1}. Qualification :- ${qual[i]}`);
 }
 
 let person: object = {
@@ -29,6 +29,16 @@ let naah: undefined= undefined;
 
 let noo: null = null;
 
+//Tuple
+let fullName:[string, string];
+fullName = ['Satyam', 'Rawat'];
 
+//Enum
+enum Size {Small = 1, Medium = 2, Large = 3}
+let sizeName: string = Size[2];
+let sizeNumber : number = Size.Small;
+
+console.log(sizeName);
+console.log(sizeNumber);
 
 export {};
