@@ -34,3 +34,16 @@ var sizeName = Size[2];
 var sizeNumber = Size.Small;
 console.log(sizeName);
 console.log(sizeNumber);
+// Any !!!! Be Careful
+var whatever = 'ahhhh no wayyyy!!!';
+whatever = 5;
+whatever = true;
+//void
+var sing = function () {
+    console.log('lalalalalaaa');
+    // return 5;
+};
+//never
+var error = function () {
+    throw Error('oooppssss');
+};

@@ -41,4 +41,22 @@ let sizeNumber : number = Size.Small;
 console.log(sizeName);
 console.log(sizeNumber);
 
+// Any !!!! Be Careful
+
+let whatever: any = 'ahhhh no wayyyy!!!';
+whatever = 5;
+whatever = true;
+
+//void
+let sing = ():void =>{
+    console.log('lalalalalaaa');
+    // return 5;
+}
+
+//never
+
+let error = ():never =>{
+    throw Error('oooppssss')
+}
+
 export {};
